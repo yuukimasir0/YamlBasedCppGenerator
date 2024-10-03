@@ -1,0 +1,16 @@
+project_name: MyCUDACppProject
+cpp_standard: 17
+languages:
+  - c++
+  - cuda
+libraries:
+  - OpenCV
+links:
+  - OpenCV
+compile_options:
+  - "-Wall"
+  - "-O3"
+cpp:
+  - example_cpp
+cuda:
+  - example_cuda
