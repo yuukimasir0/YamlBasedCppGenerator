@@ -103,7 +103,9 @@ def generate_project(yaml_file):
 
     create_cpp_files(yaml_data.get('cpp', []))
     create_cuda_files(yaml_data.get('cuda', []))
-
+    
+    create_git_ignore()
+    
     create_utils_header(yaml_data.get('languages', []))
     create_main_cpp()
 
