@@ -18,6 +18,10 @@ def create_cpp_files(cpp_names):
         with open(f'src/{name}.cpp', 'w') as source_file:
             source_file.write(f'#include "../include/{name}.hpp"\n\n')
 
+def create_git_ignore():
+    with open('.gitignore', 'w') as gitignore:
+        gitignore.write(f'build/\n')
+
 def create_cuda_files(cuda_names):
     for name in cuda_names:
         with open(f'include/{name}.cuh', 'w') as header_file:
